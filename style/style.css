@@ -24,3 +24,8 @@ a {
         border-style: solid;
         border-color: whitesmoke;
     }
+
+#members{
+	display:table;
+	margin:0 auto;
+}
