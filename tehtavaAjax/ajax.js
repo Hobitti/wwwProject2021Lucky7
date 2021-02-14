@@ -11,7 +11,7 @@ function rekisteroidy(lomake) {
     };
 
 
-    xmlhttp.open("POST", "send.php", true);
+    xmlhttp.open("POST", "kirjaudu.php", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send("henkilo=" + json);
 }
@@ -28,12 +28,12 @@ function kirjautuminen(lomake) {
     xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            alert("Kirjautuminen onnistui!");
+            alert(this.responseText);
         }
     };
 
 
-    xmlhttp.open("POST", "send.php", true);
+    xmlhttp.open("POST", "rekisteroidy.php", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send("henkilo=" + json);
 }
