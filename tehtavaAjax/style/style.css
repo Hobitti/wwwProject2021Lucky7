@@ -1,0 +1,35 @@
+body {
+    font-family: Helvetica;
+    color: rgb(22, 22, 22);
+    background-color: rgb(41, 41, 41);
+    overflow: hidden;
+}
+
+#kirjautuminen {
+    text-align: right;
+    display: table;
+    margin: auto;
+    height: 150px;
+    font-size: 28pt;
+}
+
+#nappi1 {
+    font-size: 30pt;
+    margin: 10px;
+}
+
+#nappi2 {
+    font-size: 30pt;
+    margin: 10px;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#ikkuna {
+    min-width: 99.95%;
+}

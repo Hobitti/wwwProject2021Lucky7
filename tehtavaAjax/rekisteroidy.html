@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <link rel="stylesheet" href="./style/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <meta charset="utf-8" />
+    <title>ScamBook</title>
+    <link rel="icon" href="./images/favicon.png">
+</head>
+
+<body>
+    <div class="vertical-center" id="ikkuna">
+        <div class="row justify-content-center align-self-center" id=vittu>
+            <div class="col-xs-6" style="background-color: rgb(156, 156, 156); ">
+                <br>
+                <h1 style="text-align: center; font-size: 45pt;">Rekisteröidy</h1>
+                <br>
+                <form action='rekisteroidy.php' method='post'>
+                    <div class="form-group " id="kirjautuminen">
+                        Tunnus: <input type='text' name='tunnus' value=''><br><br> Salasana: <input type='password' name='salasana' value=''>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class=" col-xs-12 text-center">
+                            <button type='submit' class="btn btn-primary" id="nappi1" name='ok' value='OK' onclick="rekisteroidy(this.form);">Rekisteröidy</button>
+                            <a href="./homepage.html" class="btn btn-primary" id="nappi2" name='rekisteroidy' value='rek'>Takaisin</a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

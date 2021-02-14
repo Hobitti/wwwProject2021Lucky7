@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
+
 <head>
     <link rel="stylesheet" href="./style/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
     <meta charset="utf-8" />
     <title>Lucky7</title>
-    <link rel="icon" href="./images/favicon.png" >
+    <link rel="icon" href="./images/favicon.png">
 </head>
+
 <body>
 
     <div class="row" id="navi">
@@ -16,30 +18,36 @@
         <div class="col-md-2" style="background-color:rgb(125, 123, 255);"><a class="nav-link" href="jere.html">Jere</a></div>
         <div class="col-md-2" style="background-color:rgb(255, 125, 249);"><a class="nav-link" href="sonja.html">Sonja</a></div>
     </div>
-	
+
     <div class="row" id="banner">
         <div class="col-md-12"></div>
     </div>
-	
+
     <div class="row" style="height:auto; min-height: 800px;">
         <div class="col-md-2" style="text-align:center; background-color: rgb(77, 77, 77);"></div>
         <div class="col-md-8" style="text-align:center; background-color: rgb(214, 214, 214); border-style: solid; border-color: gray; color:rgb(22, 22, 22)">
-            <h3>This page will contain information about the project members.</h3><br>
-            <h4>Project members</h4>
-			<ul id="members">
-				<li>Akseli Savinainen</li>
-				<li>Jere Eskelinen</li>
-				<li>Muhammed Al-Zahu</li>
-				<li>Sonja Sundell</li>
-			</ul><br>
-			<p>This is our project's home page and you can navigate to different pages made by the project members themselves.</p>
-			<p><i>-Dev Team</i></p>
+            <div class="container-fluid padding" style="text-align: center; background-color: rgb(255, 72, 209); border-style: solid; border-color: black;">
+                <div class="row padding">
+                    <div class="col-md-4" style="background-color: rgb(255, 255, 255);">
+                        <form action='kirjaudu.php' method='post'>
+                            <div class="form-group" id="kirjautuminen">
+                                Tunnus: <input type='text' name='tunnus' value=''><br> Salasana: <input type='password' name='salasana' value=''><br> Etunimi: <input type='text' name='etunimi' value=''><br> Sukunimi: <input type='text' name='sukunimi'
+                                    value=''>
+                            </div>
+                            <br>
+                            <button type='submit' class="btn btn-primary" name='ok' value='OK'>Kirjaudu</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- content panel-->
+            <div class="col-md-2" style="text-align:center; background-color: rgb(77, 77, 77);">
+            </div>
         </div>
-        <!-- content panel-->
-        <div class="col-md-2" style="text-align:center; background-color: rgb(77, 77, 77);"></div>
-    </div>
-    <div class="row">
-        <div class="h-100 col-md-12" style="text-align:center; color: white">© Lucky7 <br>All rights reserved</div>
-    </div>
+        <div class="row">
+            <div class="h-100 col-md-12" style="text-align:center; color: white">© Lucky7 <br>All rights reserved</div>
+        </div>
 </body>
+
 </html>
